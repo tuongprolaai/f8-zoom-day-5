@@ -4,8 +4,8 @@ html {
 /* Menu */
 .navbar {
     background-color: #2a50d5;
-    height: 4.6875rem;
-    line-height: 4.6875rem;
+    height: 75px;
+    line-height: 75px;
     text-align: center;
 }
 
@@ -13,14 +13,14 @@ html {
     display: inline-block;
     height: 100%;
     font-size: 0;
-    width: 70.9375rem;
+    width: 1135px;
     margin: 0 auto;
 }
 
 .menu > li {
     display: inline-block;
     font-size: 0.9375rem;
-    border-right: 0.0625rem solid #fff;
+    border-right: 1px solid #fff;
 }
 
 .menu > li:last-child {
@@ -34,7 +34,7 @@ html {
 .menu > li > a {
     display: inline-block;
     height: 100%;
-    padding: 0 1.875rem;
+    padding: 0 30px;
     text-decoration: none;
     color: white;
     background-color: transparent;
