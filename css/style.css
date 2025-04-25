@@ -1,0 +1,50 @@
+html {
+    font-size: 16px;
+}
+/* Menu */
+.navbar {
+    background-color: #2a50d5;
+    height: 4.6875rem;
+    line-height: 4.6875rem;
+    text-align: center;
+}
+
+.menu {
+    display: inline-block;
+    height: 100%;
+    font-size: 0;
+    width: 70.9375rem;
+    margin: 0 auto;
+}
+
+.menu > li {
+    display: inline-block;
+    font-size: 0.9375rem;
+    border-right: 0.0625rem solid #fff;
+}
+
+.menu > li:last-child {
+    border-right: none;
+}
+
+.menu > li a::before {
+    content: "\25B6";
+}
+
+.menu > li > a {
+    display: inline-block;
+    height: 100%;
+    padding: 0 1.875rem;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+}
+
+.menu > li:hover > a {
+    background-color: white;
+    color: #2a50d5;
+}
+
+.menu > li:active a {
+    background-color: violet;
+}
