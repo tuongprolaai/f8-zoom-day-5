@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Register Interactive</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <style>
+            /* Container */
+            .container_form {
+                background: #f2f2f2;
+                display: flex;
+                justify-content: center;
+                padding: 50px;
+            }
+
+            /* Container focus */
+            .container_form:has(input:focus, textarea:focus) {
+                background: #e0e0e0;
+            }
+
+            /* Form */
+            form {
+                background: white;
+                padding: 30px;
+                border-radius: 10px;
+                width: 400px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            /* Label chung */
+            label {
+                display: block;
+                margin-top: 15px;
+                font-weight: bold;
+            }
+
+            /* Label có dấu * đỏ */
+            label.required::after {
+                content: "*";
+                color: red;
+                margin-left: 5px;
+            }
+
+            /* Input chung */
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"],
+            input[type="password"],
+            input[type="date"],
+            textarea {
+                width: 100%;
+                padding: 10px;
+                margin-top: 5px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+
+            /* Focus input */
+            input[type="text"]:focus,
+            input[type="email"]:focus,
+            input[type="tel"]:focus,
+            input[type="password"]:focus,
+            input[type="date"]:focus,
+            textarea:focus {
+                border: 2px solid #4caf50;
+                outline: none;
+            }
+
+            /* Input lỗi */
+            input:invalid,
+            textarea:invalid {
+                border: 2px solid red;
+            }
+
+            /* Ẩn input file */
+            input[type="file"] {
+                display: none;
+            }
+
+            /* Avatar label */
+            .avatar-label {
+                display: block;
+                margin: 20px auto;
+                width: 100px;
+                height: 100px;
+                background-color: #ddd;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            /* Checkbox group */
+            .checkbox-group {
+                margin-top: 10px;
+            }
+
+            .checkbox-group label {
+                font-weight: normal;
+                display: block;
+            }
+
+            /* Submit button */
+            button[type="submit"] {
+                margin-top: 20px;
+                width: 100%;
+                padding: 12px;
+                background-color: #4caf50;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+            button[type="submit"]:hover {
+                background-color: #45a049;
+            }
+
+            button[type="submit"]:active {
+                background-color: #39843c;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container_form">
+            <form autocomplete="off" spellcheck="false" novalidate>
+                <label for="displayName" class="required">Display Name</label>
+                <input
+                    type="text"
+                    id="displayName"
+                    placeholder="Tên hiển thị của bạn trên trang"
+                    required
+                />
+
+                <label for="email" class="required">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Địa chỉ email"
+                    required
+                />
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="Số điện thoại" />
+
+                <label for="password" class="required">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Mật khẩu"
+                    required
+                />
+
+                <label for="confirmPassword" class="required"
+                    >Confirm Password</label
+                >
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Nhập lại mật khẩu"
+                    required
+                />
+
+                <label>Gender</label>
+                <input type="radio" id="male" name="gender" value="Male" />
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female" />
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="Other" />
+                <label for="other">Other</label>
+
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" />
+
+                <label for="address">Address</label>
+                <textarea
+                    id="address"
+                    placeholder="Địa chỉ hiện tại"
+                ></textarea>
+
+                <label for="avatarInput" class="avatar-label"></label>
+                <input
+                    type="file"
+                    id="avatarInput"
+                    name="avatar"
+                    accept="image/*"
+                />
+
+                <label>Communication Preferences</label>
+                <div class="checkbox-group">
+                    <label
+                        ><input type="checkbox" name="newsletter" /> Subscribe
+                        to Newsletter</label
+                    >
+                    <label
+                        ><input type="checkbox" name="promotions" /> Receive
+                        Promotional Emails</label
+                    >
+                    <label
+                        ><input type="checkbox" name="updates" /> Get Product
+                        Updates</label
+                    >
+                </div>
+
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </body>
+</html>
