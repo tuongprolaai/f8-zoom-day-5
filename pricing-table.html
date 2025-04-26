@@ -4,98 +4,11 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Pricing Table</title>
-        <style>
-            * {
-                box-sizing: border-box;
-                margin: 0;
-                padding: 0;
-                font-family: Arial, sans-serif;
-            }
-
-            body {
-                background: #f2f2f2;
-                padding: 40px;
-            }
-
-            .pricing-container {
-                display: flex;
-                justify-content: center;
-                gap: 20px;
-            }
-
-            .pricing-card {
-                background: white;
-                padding: 30px 20px;
-                border-radius: 10px;
-                width: 280px;
-                text-align: center;
-                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-                transition: all 0.3s ease;
-            }
-
-            .pricing-card:hover {
-                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-                transform: translateY(-10px);
-            }
-
-            .pricing-card:nth-child(2) {
-                border: 2px solid #4caf50;
-                background-color: #f9fff9;
-            }
-
-            .plan-title {
-                font-size: 24px;
-                font-weight: bold;
-                margin-bottom: 10px;
-            }
-
-            .plan-price {
-                font-size: 32px;
-                color: #4caf50;
-                margin-bottom: 20px;
-            }
-
-            .plan-features {
-                text-align: left;
-                margin: 20px 0;
-                list-style: none;
-            }
-
-            .plan-features li {
-                padding: 8px 0;
-                position: relative;
-                padding-left: 24px;
-            }
-
-            .plan-features li::before {
-                content: "✓";
-                position: absolute;
-                left: 0;
-                color: green;
-                font-weight: bold;
-            }
-
-            .btn {
-                display: inline-block;
-                margin-top: 15px;
-                padding: 10px 20px;
-                background: #4caf50;
-                color: white;
-                border: none;
-                border-radius: 5px;
-                text-decoration: none;
-                font-weight: bold;
-                cursor: pointer;
-            }
-
-            .btn:hover {
-                background: #45a049;
-            }
-        </style>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
         <div class="pricing-container">
-            <!-- Basic Plan -->
             <div class="pricing-card">
                 <div class="plan-title">Basic</div>
                 <div class="plan-price">$9/mo</div>
@@ -107,7 +20,6 @@
                 <a href="#" class="btn">Choose Plan</a>
             </div>
 
-            <!-- Pro Plan -->
             <div class="pricing-card">
                 <div class="plan-title">Pro</div>
                 <div class="plan-price">$19/mo</div>
@@ -120,7 +32,6 @@
                 <a href="#" class="btn">Choose Plan</a>
             </div>
 
-            <!-- Premium Plan -->
             <div class="pricing-card">
                 <div class="plan-title">Premium</div>
                 <div class="plan-price">$29/mo</div>

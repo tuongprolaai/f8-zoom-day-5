@@ -227,3 +227,102 @@ button[type="submit"]:active {
 .pricing-container .btn:hover {
     background: #45a049;
 }
+
+/* Blog */
+.blog-post {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 40px auto;
+    max-width: 800px;
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    color: #333;
+    line-height: 1.7;
+}
+
+.blog-post h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.blog-post h2:not(h1),
+.blog-post h3:not(h1) {
+    color: #2980b9;
+    margin-top: 30px;
+    font-weight: normal;
+}
+
+.blog-post .image-wrapper img {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+.blog-post .content p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.blog-post .content p:first-of-type::first-letter {
+    font-size: 3rem;
+    font-weight: bold;
+    float: left;
+    margin-right: 8px;
+    color: #3498db;
+    line-height: 1;
+}
+
+.blog-post .content p::first-line {
+    font-weight: bold;
+}
+
+.blog-post ::selection {
+    background: #3498db;
+    color: #fff;
+}
+
+.blog-post blockquote {
+    margin: 30px 0;
+    padding: 20px;
+    background: #ecf0f1;
+    border-left: 5px solid #3498db;
+    font-style: italic;
+    position: relative;
+}
+
+.blog-post blockquote::before {
+    content: "❝";
+    font-size: 3rem;
+    color: #3498db;
+    position: absolute;
+    left: -2px;
+    top: -17px;
+}
+
+.blog-post .comments {
+    margin-top: 50px;
+}
+
+.blog-post .comments h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.blog-post .comment {
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.blog-post .comment:nth-of-type(odd) {
+    background-color: #fafafa;
+}
+
+.blog-post .comment:nth-of-type(even) {
+    background-color: #e8f4fd;
+}
